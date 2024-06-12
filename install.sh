@@ -1,3 +1,4 @@
+#!/bin/bash
 sudo apt-get update -y
 sudo apt install npm -y
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
