@@ -12,6 +12,7 @@ sudo cp react.conf /etc/nginx/conf.d/react.conf
 #cd my-app
 #git clone https://github.com/georve/team-presentation.git
 #cd team-presentation/
+npm install
 npm run build
 sudo cp -R dist/ /var/www/html/my-react-app/
 sudo nginx -t && sudo systemctl reload nginx
