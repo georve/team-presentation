@@ -1,8 +1,13 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import { FaArrowRight } from 'react-icons/fa';
 
 
 const Teams = () => {
+  const[url,setUrl] = useState("None")
+  useEffect(()=>{
+    const cu= window.location.href;
+    setUrl(cu)
+  },[])
   const teamMembers = [
     {
       id: 1,
@@ -70,6 +75,7 @@ const Teams = () => {
         <div className="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
           <div className="col-lg-6">
             <h1 className="display-5 mb-0 text-slate-300">Team Clouders 6</h1>
+            <h2 className="display-5 mb-0 text-slate-300">{url}</h2>
           </div>
           <div className="col-lg-6 text-lg-end">
             <a className="btn btn-primary py-3 px-5" href="https://github.com/georve/team-presentation">

@@ -16,5 +16,7 @@ npm install
 npm run build
 sudo cp -R dist/ /var/www/html/my-react-app/
 sudo nginx -t && sudo systemctl reload nginx
+#sudo nano /etc/nginx/nginx.conf -- #include /etc/nginx/sites-enabled/*;
+
 
 
